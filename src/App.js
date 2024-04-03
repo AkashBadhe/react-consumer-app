@@ -1,22 +1,16 @@
-import logo from './logo.svg';
+import { Button } from 'rollup-react';
 import './App.css';
 
 function App() {
+  // Add this in your component file
+  require('react-dom');
+  window.React2 = require('react');
+  console.log(window.React1 === window.React2);
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Consumer App</h1>
+        <Button label="Test button">Test Button</Button>
       </header>
     </div>
   );
