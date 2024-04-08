@@ -36,3 +36,26 @@
     transform: rotate(360deg);
   }
 }
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  z-index: 100;
+  margin: 0;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  z-index: 100;
+  margin: 0;
+}
+
+.content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
